@@ -1,5 +1,5 @@
 # framer-imageFill
-A Framer module to fill layers with random images from **Unsplash**. Search term can be added to get images form a specific theme.
+A Framer module to fill layers with random images from **Unsplash**. Search term can be added to get images from a specific theme.
 
 ![framer-app-base demo ](docs/demo.gif)
 
