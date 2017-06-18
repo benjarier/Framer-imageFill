@@ -13,7 +13,7 @@ A Framer module to fill layers with random images from **Unsplash**. Search term
 2. Create a layer with the properties you want and make sure to also add a **name** (if you made your design directly in Framer Studio V90+, the name is set when you add a target ).
 3. Write the following line, if you leave the search term empty, the image will be randomly picked.
 
-    `layer.fill("Search term")`
+    `layer.imageFill("Search term")`
 4. Then you can choose if you want to keep this image (✔︎) or if you want the module to get a new one (✘)
 
 ## Example
@@ -31,7 +31,7 @@ profile = new Layer
     y: Align.center
 
 # Fill the layer with an image of a person
-profile.fill("person")
+profile.imageFill("person")
 ```
 
 ## Licenses
