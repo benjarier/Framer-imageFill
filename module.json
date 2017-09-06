@@ -1,6 +1,6 @@
 {
     "name": "imageFill",
-    "description": "A module to fill layers with random images from Unsplash",
+    "description": "A module to fill layers with images from Unsplash on the theme of your choice",
     "author": "Benjamin Carrier",
 
     "require": "imageFill = require 'imageFill'",
