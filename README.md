@@ -4,6 +4,13 @@ A Framer module to fill layers with random images from **Unsplash**. Search term
 ![framer-app-base demo ](docs/demo.gif)
 
 ## Installation
+### With Framer Modules (easiest way)
+<a href='https://open.framermodules.com/imageFill'>
+    <img alt='Install with Framer Modules'
+    src='https://www.framermodules.com/assets/badge@2x.png' width='160' height='40' />
+</a>
+
+### OR
 1. Download the `imageFill.coffee` file
 2. Create a Framer project and add the file in `/modules`
 3. At the top of the Framer document write `imageFill = require "imageFill"`

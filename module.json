@@ -1,0 +1,11 @@
+{
+    "name": "imageFill",
+    "description": "A module to fill layers with random images from Unsplash",
+    "author": "Benjamin Carrier",
+
+    "require": "imageFill = require 'imageFill'",
+    "install": "imageFill.coffee",
+    "example": "Example/exampleCode.coffee",
+
+    "thumb": "docs/thumbnail.png"
+}
