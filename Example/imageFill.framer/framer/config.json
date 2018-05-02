@@ -2,15 +2,19 @@
   "orientation" : 0,
   "updateDelay" : 0.3,
   "designModeSelected" : 0,
-  "cachedDeviceHeight" : 0,
+  "cachedDeviceHeight" : 667,
   "contentScale" : 1,
   "fullScreen" : false,
-  "cachedDeviceWidth" : 0,
+  "cachedDeviceWidth" : 375,
+  "deviceType" : "apple-iphone-8-space-gray",
   "sharedPrototype" : 0,
-  "deviceType" : "apple-iphone-7-black",
+  "propertyPanelToggleStates" : {
+
+  },
   "projectId" : "0C9F64BB-77B0-458B-970A-DE32F0F19F7E",
   "deviceOrientation" : 0,
   "selectedHand" : "",
+  "showBezel" : false,
   "foldedCodeRanges" : [
 
   ],

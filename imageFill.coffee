@@ -1,3 +1,6 @@
+# Add the following line to your project in Framer Studio.
+# imageFill = require "imageFill"
+
 currentProject = window.location.pathname.split("/")[window.location.pathname.split("/").length-2]
 
 if Layer.prototype.imageFill == undefined
@@ -29,7 +32,17 @@ if Layer.prototype.imageFill == undefined
 				throw "Search term didn't give any result"
 				return 0
 			showCredit(res, this, q)
-			@image = res.urls.regular
+			dwnldReq = new XMLHttpRequest()
+			dwnldRes = "null"
+			dwnldReq.onload = ->
+				buffer = dwnldReq.response
+				dwnldRes = JSON.parse(buffer)
+			dwnldReq.open("GET", res.links.download_location+"?client_id=aff8cc7683bb0054396a790d5d0e942a93de3ae93ac83b8d13f6bf89a96b3ba8", false)
+			dwnldReq.send()
+			if dwnldRes.errors
+				throw "Couldn't fetch photo"
+				return 0
+			@image = dwnldRes.url
 else
 	throw "Method imageFill already exists"
 
@@ -134,7 +147,8 @@ showCredit = (photo, layer, q) ->
 		textDecoration: "underline"
 		text: "Photo by #{photo.user.username}"
 		truncate: true
-		width: credit.width - 122 - 80
+		height: 13
+		width: credit.width - 210
 		y: Align.center
 		x: 122
 
